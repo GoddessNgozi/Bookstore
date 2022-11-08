@@ -1,9 +1,11 @@
-const ADDBOOK = 'ADDBOOK';
-const REMOVEBOOK = 'REMOVEBOOK';
+// Actions
+const ADD_BOOK = 'redux/books/ADD_BOOK';
+const REMOVE_BOOK = 'redux/books/REMOVE_BOOK';
 
+// Reducer
 const booksReducer = (state = [], action) => {
   switch (action.type) {
-    case ADDBOOK:
+    case ADD_BOOK:
       return [
         ...state,
         {
@@ -12,19 +14,21 @@ const booksReducer = (state = [], action) => {
           completed: false,
         },
       ];
-    case REMOVEBOOK:
+    case REMOVE_BOOK:
       return state.filter((book) => book.id !== action.id);
+
     default:
       return state;
   }
 };
 
+// Action Creators
 const addBook = () => ({
-  type: ADDBOOK,
+  type: ADD_BOOK,
 });
 
 const removeBook = () => ({
-  type: REMOVEBOOK,
+  type: REMOVE_BOOK,
 });
 
 export { booksReducer, addBook, removeBook };
