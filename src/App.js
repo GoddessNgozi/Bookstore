@@ -6,10 +6,12 @@ import Categories from './components/Categories';
 const App = () => (
   <div className="App">
     <Header />
-    <Routes>
-      <Route path="/" element={<Books />} />
-      <Route path="/categories" element={<Categories />} />
-    </Routes>
+    <main>
+      <Routes>
+        <Route path="/" element={<Books />} />
+        <Route path="/categories" element={<Categories />} />
+      </Routes>
+    </main>
   </div>
 );
 
