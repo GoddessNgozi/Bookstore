@@ -17,4 +17,5 @@ const checkStatus = () => ({
   type: CHECK_STATUS,
 });
 
-export { categoriesReducer, checkStatus };
+export default categoriesReducer;
+export { checkStatus };
