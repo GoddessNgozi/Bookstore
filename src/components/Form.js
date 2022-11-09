@@ -1,18 +1,18 @@
 import React, { useState } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import { v4 as uuidv4 } from 'uuid';
+import { useDispatch } from 'react-redux';
 import { addBook } from '../redux/books/books';
 
 const Form = () => {
   const [title, setTitle] = useState('');
   const [author, setAuthor] = useState('');
 
-  const books = useSelector((state) => state.books);
   const dispatch = useDispatch();
 
   const addBookHandler = (e) => {
     e.preventDefault();
     const book = {
-      id: books.length + 1,
+      id: uuidv4(),
       author,
       title,
     };

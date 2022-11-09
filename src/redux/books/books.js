@@ -1,20 +1,22 @@
+import { v4 as uuidv4 } from 'uuid';
+
 // Actions
 const ADD_BOOK = 'bookstore/books/ADD_BOOK';
 const REMOVE_BOOK = 'bookstore/books/REMOVE_BOOK';
 
 const defaultState = [
   {
-    id: 1,
+    id: uuidv4(),
     title: 'Book title',
     author: 'Author',
   },
   {
-    id: 2,
+    id: uuidv4(),
     title: 'Book title',
     author: 'Author',
   },
   {
-    id: 3,
+    id: uuidv4(),
     title: 'Book title',
     author: 'Author',
   },

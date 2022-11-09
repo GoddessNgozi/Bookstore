@@ -4,10 +4,10 @@ import Book from './Book';
 import Form from './Form';
 
 const Books = () => {
-  const data = useSelector((state) => state.books);
+  const books = useSelector((state) => state.books);
   return (
     <>
-      {data.map((book) => (
+      {books.map((book) => (
         <Book key={book.id} id={book.id} title={book.title} author={book.author} />
       ))}
       <Form />
