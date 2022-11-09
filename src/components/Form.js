@@ -29,8 +29,8 @@ const Form = () => {
 
   return (
     <form onSubmit={addBookHandler}>
-      <input type="text" placeholder="Book title" onChange={titleChange} value={title} />
-      <input type="text" placeholder="Author" onChange={authorChange} value={author} />
+      <input type="text" placeholder="Book title" onChange={titleChange} value={title} required />
+      <input type="text" placeholder="Author" onChange={authorChange} value={author} required />
       <button type="submit">ADD BOOK</button>
     </form>
   );
