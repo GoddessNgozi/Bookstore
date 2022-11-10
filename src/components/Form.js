@@ -13,10 +13,13 @@ const Form = () => {
     e.preventDefault();
     const book = {
       id: uuidv4(),
-      author,
       title,
+      author,
+      category: 'Action',
     };
     dispatch(addBook(book));
+    setTitle('');
+    setAuthor('');
   };
 
   const titleChange = (e) => {
