@@ -12,11 +12,14 @@ const Form = () => {
   const addBookHandler = (e) => {
     e.preventDefault();
     const book = {
-      id: uuidv4(),
-      author,
+      item_id: uuidv4(),
       title,
+      author,
+      category: 'Action',
     };
     dispatch(addBook(book));
+    setTitle('');
+    setAuthor('');
   };
 
   const titleChange = (e) => {
