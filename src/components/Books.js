@@ -5,9 +5,8 @@ import Book from './Book';
 import Form from './Form';
 
 const Books = () => {
-  const books = useSelector((state) => state.books);
-  console.log(books);
   const dispatch = useDispatch();
+  const books = useSelector((state) => state.books);
   useEffect(() => {
     dispatch(getBooks());
   }, [dispatch]);
