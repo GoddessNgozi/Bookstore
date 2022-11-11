@@ -114,12 +114,15 @@ body {
 }
 
 .book-row {
-  display: flex;
-  justify-content: space-around;
   background-color: #fff;
   border-radius: 4px;
   border: 1px solid #e8e8e8;
   padding: 2rem;
+}
+
+.partition {
+  display: flex;
+  justify-content: space-between;
 }
 
 .panel {
@@ -195,11 +198,12 @@ select {
   border: none;
   background-color: #0290ff;
   border-radius: 3px;
-  padding: 8px 24px;
+  padding: 8px 15px;
   font-family: "Roboto Slab",serif;
   font-weight: 300;
   letter-spacing: .5px;
   color: #fff;
+  width: 180px;
 }
 
 .primary-button-big {
@@ -214,4 +218,114 @@ select {
   font-size: .813rem;
   font-weight: 700;
   font-family: "Roboto Slab",serif;
+}
+
+.book-title, .book-author {
+  font-family: "Roboto Slab",serif;
+}
+
+.book-title {
+  margin-top: 0.188rem;
+  font-size: 1.375rem;
+  letter-spacing: -.2px;
+  font-weight: 700;
+  color: #121212;
+}
+
+.book-author {
+  font-size: .875rem;
+  font-weight: 300;
+  color: #4386bf;
+  margin-top: 0.188rem;
+}
+
+.action-buttons {
+  display: flex;
+  align-items: center;
+  margin-top: 1.313rem;
+}
+
+.button-outline {
+  font-family: "Roboto Slab",serif;
+  background-color: transparent;
+  border: none;
+  color: #4386bf;
+  font-size: .875rem;
+  font-weight: 300;
+  align-items: center;
+  cursor: pointer;
+}
+
+.vertical-divider {
+  width: 0.125rem;
+  height: 1.5rem;
+  background-color: #e8e8e8;
+  margin: 0 1rem;
+}
+
+.progress-container {
+  display: flex;
+  align-items: center;
+  padding-right: 45px;
+}
+
+.progress-divider {
+  width: 0.125rem;
+  height: 4.375rem;
+  margin: 0 3.688rem 0 4.938rem;
+  background-color: #e8e8e8;
+}
+
+.book-category {
+  font-weight: 700;
+  color: #121212;
+  font-family: "Montserrat",sans-serif;
+    font-size: .875rem;
+    opacity: .5;
+}
+
+.percent-complete {
+  font-family: "Montserrat",sans-serif;
+    color: #121212;
+    font-size: 2rem;
+}
+
+.completed {
+  font-size: .875rem;
+  opacity: .5;
+  font-family: "Montserrat",sans-serif;
+    color: #121212;
+}
+
+.current-chapter-container {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 20px;
+  gap: 20px;
+  width: 14rem;
+}
+
+.current-chapter, .current-chapter-label {
+  font-family: "Roboto Slab",serif;
+  font-weight: 300;
+  color: #121212;
+}
+
+.current-chapter {
+  margin-top: 0.438rem;
+  font-size: 1rem;
+  letter-spacing: -.4px;
+}
+
+.current-chapter-label {
+  font-size: .813rem;
+  opacity: .5;
+}
+
+.form-title {
+  font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: -.18px;
+    color: #888;
+    font-family: "Montserrat",sans-serif;
 }

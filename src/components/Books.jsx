@@ -22,7 +22,7 @@ const Books = () => {
       </ul>
       <div className="horizontal-divider" />
       <section>
-        <h2>ADD NEW BOOK</h2>
+        <h2 className="form-title">ADD NEW BOOK</h2>
         <Form />
       </section>
     </>
