@@ -15,7 +15,7 @@ const booksReducer = (state = defaultState, action) => {
     case ADD_BOOK:
       return [...state, action.payload];
     case REMOVE_BOOK:
-      return [...state.filter((book) => book.id !== action.payload.id)];
+      return state.filter((book) => book.item_id !== action.payload.id);
     default:
       return state;
   }
