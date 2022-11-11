@@ -2,25 +2,25 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Header = () => (
-  <header>
+  <header className="panel">
     <div>
       <div className="left">
-        <h1>Bookstore CMS</h1>
+        <h1 className="logo">Bookstore CMS</h1>
         <nav>
-          <ul className="links">
+          <ul className="nav-links links">
             <li>
-              <Link to="/">Books</Link>
+              <Link className="active-link nav-link" to="/">BOOKS</Link>
             </li>
             <li>
-              <Link to="/categories">Categories</Link>
+              <Link className="nav-link" to="/categories">CATEGORIES</Link>
             </li>
           </ul>
         </nav>
       </div>
     </div>
 
-    <div>
-      <span className="material-symbols-rounded">person</span>
+    <div className="user-icon">
+      <span className="material-icons material-symbols-rounded">person</span>
     </div>
   </header>
 );
