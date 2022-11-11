@@ -10,7 +10,7 @@ const Book = ({ title, author, id }) => {
   };
 
   return (
-    <div className="book-row">
+    <>
       <div>
         <h2>{title}</h2>
         <p>{author}</p>
@@ -34,9 +34,9 @@ const Book = ({ title, author, id }) => {
       <div>
         <p>Current Chapter</p>
         <p>Chapter 17</p>
-        <button type="button">UPDATE PROGRESS</button>
+        <button className="update" type="button">UPDATE PROGRESS</button>
       </div>
-    </div>
+    </>
   );
 };
 

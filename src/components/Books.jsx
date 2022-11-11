@@ -12,12 +12,20 @@ const Books = () => {
   }, [dispatch]);
 
   return (
-    <div>
-      {books.map((book) => (
-        <Book key={book.item_id} id={book.item_id} title={book.title} author={book.author} />
-      ))}
-      <Form />
-    </div>
+    <>
+      <ul className="books">
+        {books.map((book) => (
+          <li className="book-row" key={book.item_id}>
+            <Book id={book.item_id} title={book.title} author={book.author} />
+          </li>
+        ))}
+      </ul>
+      <div className="horizontal-divider" />
+      <section>
+        <h2>ADD NEW BOOK</h2>
+        <Form />
+      </section>
+    </>
   );
 };
 
